@@ -15,10 +15,10 @@ public class Game {
             newRound.start();
         } while (player1.getScore() < MAX_POINTS && player2.getScore() < MAX_POINTS);
 
-        displayGameResult();
+        displayGameResult(player1, player2);
     }
 
-    public void displayGameResult(){
+    public void displayGameResult(Player player1, Player player2){
         int nbrRound = Round.getNbrRound();
         System.out.println("Nombre de tours joués : " + nbrRound);
 
